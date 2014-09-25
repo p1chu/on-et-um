@@ -1,5 +1,5 @@
 /*CSS Reset*/
-body, article, section, header, nav, h1, h2, h3, h4, h5, p, ul, ol, li, a, strong, em, footer { border: 0; padding: 0; margin: 0; }
+body, div, article, section, section:after, header, nav, h1, h2, h3, h4, h5, p, ul, ol, li, a, strong, em, footer { border: 0; padding: 0; margin: 0; }
 
 /* Natural Box Model */
 html { box-sizing: border-box; }
@@ -11,9 +11,6 @@ html { box-sizing: border-box; }
 body, nav, section, article, h1, h2, h3, h4, h5, p, a  {
 	background-color: #ffe812;
 	color: #262626;
-	/*font-family: "letter-gothic-std";*/
-	/*font-family: "Courier New";*/
-	/*font-family: "nimbus-sans";*/
 	font-family: "franklin-gothic-urw";
 	font-size: 1em;
 	font-weight: 300;
@@ -40,18 +37,19 @@ nav {
 	height: 100%;
 }
 
-nav ul li {
-}
-
 nav ul li a {
-	line-height: 2em;
 	font-weight: 500;
 	font-style: normal;
 	font-weight: 500;
 }
 
+nav ul li#me a {
+	text-decoration: none;
+}
+
 article {
 	padding-bottom: 4em;
+	border-bottom: 4px solid #262626;
 }
 
 .iPad {
@@ -65,11 +63,23 @@ article {
 	/*text-align: center;*/
 }
 
+section {
+	margin-right: 4px;
+}
+
+section#passions {
+    background-image: url('cave01_wb.jpg');
+}
+
 .column {
 	width: 240px;
 	display: inline-block;
 	vertical-align: top;
 	overflow: hidden;
+}
+
+article section.column {
+	border-top: 2px solid #262626;
 }
 
 #education, #experience, #loves, #portrait {
@@ -84,23 +94,29 @@ article {
 .uppercase {
 	text-transform: uppercase;
 }
-/*.rounded {
-	border-radius: .125em;
-}*/
 
-/*.float-left {
-	float: left;
-}*/
+.tracking-half-em{
+	letter-spacing: .5em;
+}
+
+.leading-block {
+	line-height: 1em;
+}
+
+.small-type {
+	font-size: .75em;
+}
 
 h1 {
 	font-size: 1.5em;
+	font-weight: 700;
 	line-height: 2em;
 	margin-bottom: 1.5em;
-	border-bottom: .125em solid #262626;
+	/*border-bottom: 2px solid #262626;*/
 }
 
 h2 {
-	font-weight: 700;
+	font-weight: 500;
 	/*text-transform: uppercase;*/
 	padding-bottom: 1.5em;
 }
@@ -123,16 +139,9 @@ h5 {
 	margin-bottom: 1.5em;
 }
 
+footer h5 {
+	margin-top: .25em;
+}
+
 strong { weight: 700;}
-
-p {
-}
-
-a {
-}
-
-footer {
-	border-top: .0625 solid #262626;
-
-}
 
