@@ -58,11 +58,6 @@ article {
 	padding: 16px;
 }
 
-.row {
-	max-width: 1024;
-	/*text-align: center;*/
-}
-
 section {
 	margin-right: 4px;
 	padding-right: 16px;
@@ -72,6 +67,11 @@ section#photo {
     background-image: url('../images/IMG_0499.jpg');
 }
 
+.sub-section {
+	padding-top: .75em;
+	border-top: 1px solid #262626;
+	padding-bottom: 3em;
+}
 
 .column {
 	width: 240px;
@@ -125,14 +125,15 @@ h2 {
 
 h3 {
 	letter-spacing: .0625em;
-	padding-bottom: 1.5em;
 }
 
-h4 {
-
+h5 {
+	font-size: .875em;
+	line-height: 3em;
 }
 
 footer { margin-top: 1.5em;}
+
 footer p {
 	font-style: normal;
 	font-weight: 400;
