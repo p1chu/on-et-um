@@ -1,4 +1,4 @@
-/*CSS Reset*/
+/* CSS Reset */
 body, div, article, section, section:after, header, nav, h1, h2, h3, h4, h5, p, ul, ol, li, a, strong, em, footer { border: 0; padding: 0; margin: 0; }
 
 /* Natural Box Model */
@@ -6,71 +6,55 @@ html { box-sizing: border-box; }
 *, *:before, *:after { box-sizing: inherit; }
 
 
-/*  V  O  I  L  A  */
+/* ======== V  O  I  L  A ========  */
 
 body, nav, section, article, h1, h2, h3, h4, h5, p, a  {
-	background-color: #ffe812;
-	color: #262626;
 	font-family: "franklin-gothic-urw";
-	font-size: 1em;
 	font-weight: 300;
 	font-style: normal;
+	font-size: 1em;
 	line-height: 1.5em;
+	color: #262626;
+	background-color: #ffe812;
 }
 
-#container {
-	padding-top: 160px;
-	margin: auto;
-	/*margin-top: 64px;*/
-	/*why doesn't this work?*/
+#resume {
+	padding-top: 10em;
 }
 
-header {
+body header {
 	width: 100%;
 	position: fixed;
-	opacity: .9;
 	z-index: 100;
-	border-bottom: 1px solid #262626;
-}
-
-nav { 
-	opacity: 1;
-	height: 100%;
+	opacity: .9;
+	border-bottom: .0625em solid #262626;
 }
 
 nav ul li a {
 	font-weight: 500;
 	font-style: normal;
+	opacity: 1;
 }
 
 nav ul li#me a {
 	text-decoration: none;
 }
 
-article {
-	padding-bottom: 4em;
+article#resume {
+	padding-bottom: 3em;
 	border-bottom: 4px solid #262626;
 }
 
-.iPad {
+section {
+	border-right: none;
+}
+
+.iOS {
+	/*padding: 16px;*/
+	margin: auto;
+	padding-left: 16px;
 	min-width: 320px;
 	max-width: 1024px;
-	padding: 16px;
-}
-
-section {
-	margin-right: 4px;
-	padding-right: 16px;
-}
-
-section#photo {
-    background-image: url('../images/IMG_0499.jpg');
-}
-
-.sub-section {
-	padding-top: .75em;
-	border-top: 1px solid #262626;
-	padding-bottom: 3em;
 }
 
 .column {
@@ -78,35 +62,8 @@ section#photo {
 	display: inline-block;
 	vertical-align: top;
 	overflow: hidden;
-}
-
-article section.column {
-	border-top: 2px solid #262626;
-}
-
-#education, #experience, #loves, #portrait {
-	/*height: 480px;*/
-	margin-bottom: 2em;
-}
-
-.centered {
-	margin: auto;
-}
-
-.uppercase {
-	text-transform: uppercase;
-}
-
-.tracking-half-em{
-	letter-spacing: .5em;
-}
-
-.leading-block {
-	line-height: 1em;
-}
-
-.small-type {
-	font-size: .75em;
+	border-right: none;
+	margin-right: 8px;
 }
 
 h1 {
@@ -119,20 +76,60 @@ h1 {
 
 h2 {
 	font-weight: 500;
-	/*text-transform: uppercase;*/
-	padding-bottom: 1.5em;
+	margin-bottom: 1.5em;
 }
 
 h3 {
 	letter-spacing: .0625em;
+	line-height: 3em;
 }
+
+.title-small {
+	font-size: .75em;
+	font-weight: 400;
+}
+
+.padding-top-24px {
+	padding-top: 1.5em;
+}
+
+.padding-bottom-24px {
+	padding-bottom: 1.5em;
+}
+
+.rule-top-1px {
+	border-top: .0625em solid #262626;
+}
+
+.rule-bottom-1px {
+	border-bottom: .0625em solid #262626;;
+}
+
+.rule-top-2px {
+	border-top: .125em solid #262626;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.leading-block {
+	line-height: 1em;
+}
+
+.tracking-8px {
+	letter-spacing: .5em;
+}
+
 
 h5 {
 	font-size: .875em;
 	line-height: 3em;
 }
 
-footer { margin-top: 1.5em;}
+footer { 
+	padding-top: 1.5em;
+}
 
 footer p {
 	font-style: normal;
@@ -143,5 +140,7 @@ footer p {
 	margin-bottom: 1.5em;
 }
 
-/*strong { weight: 700;}*/
+footer p a {
+	font-style: bold;
+}
 
